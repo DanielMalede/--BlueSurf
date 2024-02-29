@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const MONGO =
   "mongodb+srv://SurfBlue:PLgtCE33JTzF67GT@cluster0.s4bdsjz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-const port = process.env.PORT || 6001;
+const port = process.env.PORT;
 const connection = mongoose
   .connect(MONGO)
   .then(() => {
